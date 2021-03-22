@@ -3,10 +3,11 @@ Welcome! This is the Containers repository containing custom built C++ standard 
 List of current C++ containers in respository.
 * Array - A stack allocated array with a fixed number of elements. 
 * Dynamic Array - A dynamically allocated array with the ability to resize depending on the number of elements. 
+
 More containers will be added in due course. 
 
 NOTE: These containers are for educational and demonstartion puropses only. DO NOT USE IN PRODUCTION CODE!
-These containers have not been profiled for performance and are therefore unoptimized.
+These containers have not been profiled for performance and are therefore unoptimized. These containers are also untested, therfore many of them may have bugs.
 ### License
 MIT License
 Copyright 2020 Michael Richard Davis
