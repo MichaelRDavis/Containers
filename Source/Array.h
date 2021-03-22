@@ -164,7 +164,7 @@ T& TArray<T, Elements>::At(int32_t Index)
 template<typename T, int32_t Elements>
 TArray<T, Elements>::~TArray()
 {
-
+	
 }
 
 template<typename T, int32_t Elements>

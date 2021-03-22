@@ -26,6 +26,8 @@ int main()
 	MyDynamicArray.AddElement(3);
 	MyDynamicArray.AddElement(4);
 
+	MyDynamicArray.RemoveElement(2);
+
 	for (int32_t i = 0; i < MyDynamicArray.GetSize(); i++)
 	{
 		std::cout << MyDynamicArray[i] << std::endl;

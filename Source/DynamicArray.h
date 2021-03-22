@@ -45,7 +45,7 @@ public:
 
 	void RemoveAt(int32_t Index);
 
-	int32_t Find(const T& Value, int32_t Index);
+	int32_t Find(const T& Value);
 
 	void Resize(int32_t NewSize);
 
@@ -72,7 +72,7 @@ void TDynamicArray<T>::Resize(int32_t NewSize)
 }
 
 template<typename T>
-int32_t TDynamicArray<T>::Find(const T& Value, int32_t Index)
+int32_t TDynamicArray<T>::Find(const T& Value)
 {
 	for (int32_t i = 0; i < NumElements; i++)
 	{
