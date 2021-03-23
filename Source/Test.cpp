@@ -5,6 +5,7 @@
 int main()
 {
 	TArray<int32_t, 5> MyArray;
+	MyArray.Fill(0);
 
 	for (int32_t i = 0; i < MyArray.MaxNumElements(); i++)
 	{

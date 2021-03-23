@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cassert>
+#include <string>
 
 /**
  * Standard stack allocated array with a fixed number of elements
@@ -68,7 +69,7 @@ int32_t TArray<T, Elements>::MaxNumElements() const
 template<typename T, int32_t Elements>
 void TArray<T, Elements>::Fill(const T& Value)
 {
-	
+	memset(ArrayPtr, Value, Elements * sizeof(ArrayPtr));
 }
 
 template<typename T, int32_t Elements>
@@ -140,24 +141,28 @@ T& TArray<T, Elements>::Front()
 template<typename T, int32_t Elements>
 const T& TArray<T, Elements>::operator[](int32_t Index) const
 {
+	assert(Index < Elements);
 	return ArrayPtr[Index];
 }
 
 template<typename T, int32_t Elements>
 T& TArray<T, Elements>::operator[](int32_t Index)
 {
+	assert(Index < Elements);
 	return ArrayPtr[Index];
 }
 
 template<typename T, int32_t Elements>
 const T& TArray<T, Elements>::At(int32_t Index) const
 {
+	assert(Index < Elements);
 	return ArrayPtr[Index];
 }
 
 template<typename T, int32_t Elements>
 T& TArray<T, Elements>::At(int32_t Index)
 {
+	assert(Index < Elements);
 	return ArrayPtr[Index];
 }
 

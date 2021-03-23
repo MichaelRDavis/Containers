@@ -230,12 +230,14 @@ T& TDynamicArray<T>::Front()
 template<typename T>
 const T& TDynamicArray<T>::operator[](int32_t Index) const
 {
+	assert(Index < NumElements);
 	return ArrayPtr[Index];
 }
 
 template<typename T>
 T& TDynamicArray<T>::operator[](int32_t Index)
 {
+	assert(Index < NumElements);
 	return ArrayPtr[Index];
 }
 
