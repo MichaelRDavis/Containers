@@ -1,8 +1,11 @@
 ### Containers
 Welcome! This is the Containers repository containing custom built C++ standard library containers.
-List of current C++ containers in respository.
+List of current C++ containers in respository. Many of these containers are still currenlty in a work-in-progress state.
 * Array - A stack allocated array with a fixed number of elements. 
 * Dynamic Array - A dynamically allocated array with the ability to resize depending on the number of elements. 
+* Linked List - A sequential container where each element points to the next element.
+* Stack - A container desinged to operate in a last-in first-out context.
+* Queue - A container desinged to operate in a first-in first-out context.
 
 More containers will be added in due course. 
 

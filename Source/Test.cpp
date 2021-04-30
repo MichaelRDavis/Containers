@@ -1,5 +1,7 @@
-#include "Array.h"
-#include "DynamicArray.h"
+#include "Containers/Array.h"
+#include "Containers/DynamicArray.h"
+#include "Containers/LinkedList.h"
+#include "Containers/Stack.h"
 #include <iostream>
 
 int main()
@@ -33,6 +35,13 @@ int main()
 	{
 		std::cout << MyDynamicArray[i] << std::endl;
 	}
+
+	TLinkedList<int32_t> MyLinkedList;
+	MyLinkedList.InsertBefore(5);
+	MyLinkedList.InsertAfter(0);
+
+	TStack<int32_t> MyStack;
+	MyStack.Add(5);
 
 	return 0;
 }
